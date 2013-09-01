@@ -1,0 +1,2 @@
+class BookInStock
+end
