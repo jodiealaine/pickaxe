@@ -1,5 +1,6 @@
 class BookInStock
-  attr_reader :isbn, :price
+  attr_reader :isbn
+  attr_accessor :price
 	def initialize(isbn, price)
 		@isbn = isbn
 		@price = Float(price)
@@ -7,10 +8,6 @@ class BookInStock
 	def to_s
 		"ISBN: #{@isbn}, price: #{@price}"
 	end
-
-  def price=(new_price)
-	  @price = new_price
-  end
 end
 
 
